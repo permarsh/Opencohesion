@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+xgboost
+category_encoders
+imbalanced-learn (per SMOTE e RandomUnderSampler)
+scikit-learn
+matplotlib
+seaborn
+pillow
