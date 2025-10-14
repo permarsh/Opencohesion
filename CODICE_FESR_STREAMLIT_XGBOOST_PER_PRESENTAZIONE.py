@@ -319,9 +319,9 @@ if st.sidebar.button("Run Model Training and Evaluation"):
         cm = confusion_matrix(oof_true, y_pred)
         fig_cm, ax_cm = plt.subplots(figsize=(5, 4))
         class_order = [
-            "avanzamento fisico sotto 50%",
-            "avanzamento fisico 51-95%",
-            "avanzamento fisico 96-100%"
+            "avanzamento sotto 50%",
+            "avanzamento 51-95%",
+            "avanzamento 96-100%"
         ]
 
         sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
