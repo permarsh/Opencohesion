@@ -30,8 +30,8 @@ st.markdown(
 st.set_page_config(page_title="XGBoost Classifier App", layout="wide")
 
 # Header with centered text and right-aligned logo
-logo_path = r"C:\Users\u1341435\OneDrive - MMC\Desktop\OpenCoesione\LOGO MARSH.jpg"
-logo = Image.open(logo_path)
+logo_url = "https://logowik.com/content/uploads/images/marsh9653.jpg"
+logo = Image.open(logo_url)
 
 col_left, col_center, col_right = st.columns([1, 3, 1])
 with col_center:
