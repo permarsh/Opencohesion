@@ -318,8 +318,14 @@ if st.sidebar.button("Run Model Training and Evaluation"):
         # Display confusion matrix last
         cm = confusion_matrix(oof_true, y_pred)
         fig_cm, ax_cm = plt.subplots(figsize=(5, 4))
+        class_order = [
+            "avanzamento fisico sotto 50%",
+            "avanzamento fisico 51-95%",
+            "avanzamento fisico 96-100%"
+        ]
+
         sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
-                    xticklabels=le_target.classes_, yticklabels=le_target.classes_, ax=ax_cm)
+            xticklabels=class_order, yticklabels=class_order, ax=ax_cm)
         ax_cm.set_xlabel('Predicted')
         ax_cm.set_ylabel('True')
         ax_cm.set_title('Confusion Matrix (CV)')
