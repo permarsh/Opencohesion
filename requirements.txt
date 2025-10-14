@@ -3,7 +3,7 @@ pandas
 numpy
 xgboost
 category_encoders
-imbalanced-learn (per SMOTE e RandomUnderSampler)
+imbalanced-learn
 scikit-learn
 matplotlib
 seaborn
