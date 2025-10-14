@@ -44,8 +44,7 @@ with col_center:
         """,
         unsafe_allow_html=True
     )
-with col_right:
-    st.image(logo_url, width=120)
+
 
 
 # Sidebar: File upload or use default
