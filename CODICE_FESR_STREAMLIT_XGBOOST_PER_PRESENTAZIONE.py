@@ -31,7 +31,7 @@ st.set_page_config(page_title="XGBoost Classifier App", layout="wide")
 
 # Header with centered text and right-aligned logo
 logo_url = "https://logowik.com/content/uploads/images/marsh9653.jpg"
-logo = Image.open(logo_url)
+st.image(logo_url, width=180)
 
 col_left, col_center, col_right = st.columns([1, 3, 1])
 with col_center:
