@@ -45,7 +45,7 @@ with col_center:
         unsafe_allow_html=True
     )
 with col_right:
-    st.image(logo, width=120)
+    st.image(logo_url, width=120)
 
 # Default file path
 default_file_path = r"C:\Users\U1341435\OneDrive - MMC\Desktop\OpenCoesione\Nuovo_Input_FESR_esteso.xlsx"
