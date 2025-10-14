@@ -47,23 +47,14 @@ with col_center:
 with col_right:
     st.image(logo_url, width=120)
 
-# Default file path
-default_file_path = r"C:\Users\U1341435\OneDrive - MMC\Desktop\OpenCoesione\Nuovo_Input_FESR_esteso.xlsx"
 
 # Sidebar: File upload or use default
 st.sidebar.header("Data Input")
 uploaded_file = st.sidebar.file_uploader("Upload Excel file", type=["xlsx"])
 
-if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
     st.sidebar.success("File loaded from upload")
-else:
-    try:
-        df = pd.read_excel(default_file_path)
-        st.sidebar.info(f"Loaded default file from:\n{default_file_path}")
-    except Exception as e:
-        st.sidebar.error(f"Failed to load default file: {e}")
-        st.stop()
+
 
 # Show data preview
 st.subheader("Data Preview")
