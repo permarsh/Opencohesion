@@ -52,8 +52,12 @@ with col_right:
 st.sidebar.header("Data Input")
 uploaded_file = st.sidebar.file_uploader("Upload Excel file", type=["xlsx"])
 
-df = pd.read_excel(uploaded_file)
-st.sidebar.success("File loaded from upload")
+if uploaded_file is not None:
+    df = pd.read_excel(uploaded_file)
+    st.sidebar.success("File loaded from upload")
+else:
+    st.warning("Please upload an Excel file to proceed.")
+    st.stop()
 
 
 # Show data preview
