@@ -102,7 +102,7 @@ if len(selected_columns) == 0:
 st.sidebar.header("Select Target to Predict")
 target_var = st.sidebar.selectbox(
     "Target variable",
-    options=['%AVANZ. FISICO ', '%SPESO']
+    options=['AVANZAMENTO FISICO', 'AVANZAMENTO FINANZIARIO']
 )
 
 # Button to start training
